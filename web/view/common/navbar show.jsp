@@ -13,7 +13,7 @@
         <div class="nav-left">
             <ul class="nav-links">
                 <li><a href="HomePage.jsp" class="underline-on-click">HOME</a></li>
-                <li><a href="#" class="underline-on-click">MENU</a></li>
+                <li><a href="homepage/menu.jsp" class="underline-on-click">MENU</a></li>
             </ul>
         </div>
         <div class="nav-right">

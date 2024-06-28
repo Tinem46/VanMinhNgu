@@ -114,7 +114,7 @@
         </div>
        
        <!--footer start -->
-       <jsp:include page="common/footer.jsp"></jsp:include>
+           <jsp:include page="common/footer.jsp"></jsp:include>
        <!--footer end -->
       <script src="${pageContext.request.contextPath}/js/homepage.js"></script>
     </body>

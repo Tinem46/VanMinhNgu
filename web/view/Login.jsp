@@ -62,7 +62,6 @@
         </div>
 
         <jsp:include page="common/footer.jsp"></jsp:include>
-        
         <script src="${pageContext.request.contextPath}/js/login.js"></script>
     </body>
 </html>
