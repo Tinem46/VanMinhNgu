@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-
 type = "text/javascript";
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
@@ -17,3 +16,4 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
 });
+       

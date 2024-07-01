@@ -1,0 +1,207 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 1, 2024, 1:26:54 PM
+    Author     : ADMIN
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+    color: #f1f1f1;
+}
+
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    z-index: 2;
+}
+
+.content {
+    margin-left: 250px;
+    transition: margin-left 0.5s;
+}
+
+/*            .content.expanded {
+                margin-left: 250px;
+            }*/
+.navbar {
+    margin-left: 250px;
+}
+.order-card {
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.order-status {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+}
+.status-completed {
+    background-color: #28a745;
+}
+.status-cancelled {
+    background-color: #dc3545;
+}
+.status-delivering {
+    background-color: #ffc107;
+}
+.order-menu img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.order-total {
+    font-size: 18px;
+    font-weight: bold;
+}
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.menu-table {
+    width: 100%;
+    margin-top: 20px;
+}
+.menu-table th, .menu-table td {
+    padding: 10px;
+    text-align: left;
+}
+.menu-table th {
+    background-color: #343a40;
+    color: white;
+}
+.menu-table td {
+    background-color: #f8f9fa;
+}
+.btn-delete {
+    color: white;
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-delete:hover {
+    background-color: #c82333;
+}
+.btn-add {
+    color: white;
+    background-color: #28a745;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-add:hover {
+    background-color: #218838;
+}
+.item-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.user-table {
+    width: 100%;
+    margin-top: 20px;
+}
+.user-table th, .user-table td {
+    padding: 10px;
+    text-align: left;
+}
+.user-table th {
+    background-color: #343a40;
+    color: white;
+}
+.user-table td {
+    background-color: #f8f9fa;
+}
+.btn-edit {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo img {
+    height: 80px; /* Adjust height */
+    width: 80px; /* Adjust width */
+    border-radius: 40px; /* Adjust border-radius */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust the height as needed */
+    background-color: #f8f9fa; /* Optional: Add a background color */
+}
+
+.navbar-brand {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: Make the text bold */
+    text-align: center;
+    margin-left: 300px;
+}
+

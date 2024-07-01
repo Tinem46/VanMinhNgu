@@ -5,22 +5,14 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<header>
-    <nav class="navbar show">
-        <div class="logo1">
-            <a href="HomePage.jsp"><img src="https://img.freepik.com/premium-vector/food-logo-design-vector-image_887635-84.jpg"></a>
-        </div>
-        <div class="nav-left">
-            <ul class="nav-links">
-                <li><a href="HomePage.jsp" class="underline-on-click">HOME</a></li>
-                <li><a href="homepage/menu.jsp" class="underline-on-click">MENU</a></li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <ul class="nav-links">
-                <li><a href="Login.jsp" class="underline-on-click">SIGN UP</a></li>
-                <li><a href="Login.jsp" class="underline-on-click">SIGN IN</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<div class="navbar">
+    <div class="logo1">
+        <a href="HomePage.jsp" class="logo"><img src="https://img.freepik.com/premium-vector/food-logo-design-vector-image_887635-84.jpg"></a>
+    </div>
+    <div class="menu">
+       <a href="/Assigment1.1/view/HomePage.jsp">Home</a> <!-- Đường dẫn tuyệt đối -->
+        <a href="/Assigment1.1/view/homepage/menu.jsp">Menu</a> <!-- Đường dẫn tuyệt đối -->
+        <a href="/Assigment1.1/view/homepage/Login.jsp">Sign Up</a> <!-- Root-relative path -->
+        <a href="/Assigment1.1/view/homepage/Login.jsp">Sign In</a> <!-- Root-relative path -->
+    </div>
+</div>

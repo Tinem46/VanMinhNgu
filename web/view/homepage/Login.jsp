@@ -10,37 +10,42 @@
     Author     : Qcuanh
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>PAGE</title>
+        <title>Login Page</title>
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Login.css">
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/homepage.css">
-      
-    </head>
-    <body>
-         <jsp:include page="common/navbar show.jsp"></jsp:include>
-        
-        <div class="container" id="container">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-            <div class="form-container sign-up-container">
-                <form action="#">
-                    <h1>Create Account</h1>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <button>Sign Up</button>
-                </form>
-            </div>
-            <div class="form-container sign-in-container">
-                <form action="Signin" method="Post">
-                    <h1>Sign in</h1>
-                    <input type="text" name="email" placeholder="Email" />
-                    <input type="text" name="password" placeholder="Password" />
-                    <tr>
-                        <td></td>
-                        <td style="color: red">${error}</td>
+
+    </head>
+
+    <body>
+        <jsp:include page="../common/navbar show.jsp"></jsp:include>
+
+            <div class="container" id="container">
+
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button>Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="Signin" method="Post">
+                        <h1>Sign in</h1>
+                        <input type="text" name="email" placeholder="Email" />
+                        <input type="text" name="password" placeholder="Password" />
+                        <tr>
+                            <td></td>
+                            <td style="color: red">${error}</td>
                     </tr>
                     <a href="#">Forgot your password?</a>
                     <button type="submit" value="signin">Sign In</button>
@@ -56,13 +61,13 @@
                     <div class="overlay-panel overlay-right">
                         <h1>Hello, Friend!</h1>
                         <p>Enter your personal details and start journey with us</p>
-                        <button class="ghost" id="signUp">Sign Up</button></div>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <jsp:include page="common/footer.jsp"></jsp:include>
-        
+        <jsp:include page="../common/footer.jsp"></jsp:include>
         <script src="${pageContext.request.contextPath}/js/login.js"></script>
     </body>
 </html>
